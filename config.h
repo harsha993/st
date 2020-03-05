@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "SauceCodePro Nerd Font:pixelsize=13:antialias=true:autohint=true";
+static char *font = "JetBrainsMono Nerd Font:pixelsize=13:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -83,29 +83,29 @@ char *termname = "st-256color";
 unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.88;           //< alpha value used when the window is focused.
-float alphaUnfocussed = 0.75; //< alpha value used when the focus is lost
+float alpha = 0.95;           //< alpha value used when the window is focused.
+float alphaUnfocussed = 0.9; //< alpha value used when the focus is lost
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#1d1f21", /* black   */
+	"#1c2023", /* black   */
 	"#cc342b", /* red     */
 	"#0ed839", /* green   */
 	"#fba922", /* yellow  */
 	"#3b48e3", /* blue    */
-	"#6673bf", /* magenta */
-	"#0b3452", /* cyan    */
+	"#f92672", /* magenta */
+	"#f92672", /* cyan    */
 	"#c5c8c6", /* white   */
 
 	/* 8 bright colors */
-	"#969896", /* black   */
-	"#e92f2f", /* red     */
-	"#23fd00", /* green   */
+	"#1c2023", /* black   */
+	"#cc342b", /* red     */
+	"#0ed839", /* green   */
 	"#fba922", /* yellow  */
 	"#3b48e3", /* blue    */
-	"#899aff", /* magenta */
-	"#0f829d", /* cyan    */
+	"#a36ac7", /* magenta */
+	"#f92672", /* cyan    */
 	"#ffffff", /* white   */
 
 	[255] = 0,
@@ -122,7 +122,7 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
-static unsigned int defaultcs = 257;
+static unsigned int defaultcs = 197;
 static unsigned int defaultrcs = 256;
 
 /*
