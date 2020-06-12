@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:pixelsize=13:antialias=true:autohint=true";
+static char *font = "Inconsolata Nerd Font:pixelsize=16:antialias=true:autohint=true,SauceCodePro Nerd Font Mono:pixelsize=13:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -54,7 +54,7 @@ static unsigned int blinktimeout = 800;
 /*
  * thickness of underline and bar cursors
  */
-static unsigned int cursorthickness = 2;
+static unsigned int cursorthickness = 1;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
@@ -89,8 +89,8 @@ float alphaUnfocussed = 0.9; //< alpha value used when the focus is lost
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#1c2023", /* black   */
-	"#cc342b", /* red     */
+	"#0a0f14", /* black   */
+	"#c33027", /* red     */
 	"#0ed839", /* green   */
 	"#fba922", /* yellow  */
 	"#3b48e3", /* blue    */
@@ -99,7 +99,7 @@ static const char *colorname[] = {
 	"#c5c8c6", /* white   */
 
 	/* 8 bright colors */
-	"#1c2023", /* black   */
+	"#0a0f14", /* black   */
 	"#cc342b", /* red     */
 	"#0ed839", /* green   */
 	"#fba922", /* yellow  */
@@ -174,8 +174,6 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
@@ -188,6 +186,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,	            XK_Down, 		kscrolldown,    {.i =  -1} },
 	{ MODKEY,				XK_c,			clipcopy,       {.i =  0} },
 	{ MODKEY,				XK_v,			clippaste,      {.i =  0} },
+    { MODKEY,               XK_KP_Add,      zoom,           {.f = +1} },
+    { MODKEY,               XK_KP_Subtract, zoom,           {.f = -1} },
 };
 
 /*
