@@ -187,7 +187,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,				XK_c,			clipcopy,       {.i =  0} },
 	{ MODKEY,				XK_v,			clippaste,      {.i =  0} },
     { MODKEY,               XK_KP_Add,      zoom,           {.f = +1} },
-    { MODKEY,               XK_KP_Subtract, zoom,           {.f = -1} },
+    { MODKEY,               XK_KP_Equal,    zoom,           {.f = +0.5} },
+    { MODKEY,               XK_KP_Subtract, zoom,           {.f = -0.5} },
 };
 
 /*

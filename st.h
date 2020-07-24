@@ -71,6 +71,7 @@ typedef Glyph *Line;
 
 typedef union {
 	int i;
+    float j;
 	uint ui;
 	float f;
 	const void *v;
